@@ -13,6 +13,10 @@ body {
   background-color: var(--color-grey-400);
   color: white;
   font-family: "Montserrat", sans-serif;
+  margin-inline:0;
+  margin-block:0;
+  padding-inline:0;
+  padding-block:0;
 }
 
 h1, h2, h3 {
@@ -43,6 +47,32 @@ ol {
   margin-block-end: 3.5rem;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  top: 94%;
+  background-color: var(--color-grey-400);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+nav ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 1600px;
+  margin-inline:auto;
+  padding-inline: 1rem;
+}
+
 section {
   width: fit-content;
   margin-block-start: 0;
@@ -69,4 +99,18 @@ img {
   display: block;
   margin-inline:auto;
   border-radius: var(--border-radius);
+}
+
+
+@media only screen and (min-width:1300px) {
+
+  nav {
+    display: none;
+  }
+
+  main {
+    display: grid;
+
+  }
+
 }
