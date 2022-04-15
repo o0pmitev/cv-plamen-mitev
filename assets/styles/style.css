@@ -23,6 +23,10 @@ h1, h2, h3 {
   font-family: "Dosis", sans-serif;
 }
 
+#header h2 {
+  font-weight: 300;
+}
+
 h1,h2,h3,p { text-align: center;}
 
 h2 {
@@ -68,7 +72,7 @@ nav ul a {
 }
 
 main {
-  max-width: 1600px;
+  max-width: 100rem;
   margin-inline:auto;
   padding-inline: 1rem;
 }
@@ -102,19 +106,21 @@ img {
 }
 
 
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width:1250px) {
   h1,h2,h3,p { text-align: left;}
+
   section, img {
     margin-inline: initial;
   }
+
   nav {
     display: none;
   }
 
   main {
     display: grid;
-    grid-template-columns: 1rem 500px 1fr 1rem;
-    grid-template-rows: min-content 100px 350px 100px;
+    grid-template-columns: 1rem 34rem 1fr 1rem;
+    grid-template-rows: min-content 12rem 28rem 1fr 4rem;
     gap: 1rem;
   }
 
@@ -126,16 +132,36 @@ img {
     grid-column: 2/3;
   }
 
+  #header h2 {
+    font-size: 3rem;
+    margin-block-start: 0;
+  }
+
+  #header p {
+    font-size: 2rem;
+  }
+
   #personal-profile {
     grid-column: 2/3;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #personal-profile img {
+    order: -1;
   }
 
   #skills {
     grid-column: 2/3;
+    width: 20rem;
+    margin-block-end: 0;
   }
 
   #contact {
     grid-column: 2/3;
+    width: 20rem;
+
   }
 
   #work-experience {
@@ -144,7 +170,7 @@ img {
   }  
 
   #education-history {
-    grid-row: 6/8;
+    grid-row: 5/7;
     grid-column: 3/4;
   }
 }
