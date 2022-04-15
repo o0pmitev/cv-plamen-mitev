@@ -103,14 +103,48 @@ img {
 
 
 @media only screen and (min-width:1300px) {
-
+  h1,h2,h3,p { text-align: left;}
+  section, img {
+    margin-inline: initial;
+  }
   nav {
     display: none;
   }
 
   main {
     display: grid;
-
+    grid-template-columns: 1rem 500px 1fr 1rem;
+    grid-template-rows: min-content 100px 350px 100px;
+    gap: 1rem;
   }
 
+  h1 {
+    grid-column: 2/-1;
+  }
+
+  #header {
+    grid-column: 2/3;
+  }
+
+  #personal-profile {
+    grid-column: 2/3;
+  }
+
+  #skills {
+    grid-column: 2/3;
+  }
+
+  #contact {
+    grid-column: 2/3;
+  }
+
+  #work-experience {
+      grid-row: 2/4;
+      grid-column: 3/4;
+  }  
+
+  #education-history {
+    grid-row: 6/8;
+    grid-column: 3/4;
+  }
 }
