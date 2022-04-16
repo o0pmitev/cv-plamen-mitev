@@ -245,3 +245,27 @@ img {
     display: block;
   }
 }
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    break-inside: avoid;
+  }
+}
