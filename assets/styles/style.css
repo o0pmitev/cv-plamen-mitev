@@ -137,6 +137,11 @@ img {
   z-index: -1;
 }
 
+.print {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 
 @media only screen and (min-width:1250px) {
   h1,h2,h3,p { text-align: left;}
