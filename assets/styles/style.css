@@ -63,11 +63,10 @@ ol {
 nav {
   position: fixed;
   width: 100%;
-  top: 94%;
+  top: 86%;
   background-color: var(--color-grey-400);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 10;
-
 }
 
 nav ul {
@@ -138,11 +137,23 @@ img {
 }
 
 .print {
+  display: none;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
 }
 
+.print button {
+  padding-inline: 28px;
+  padding-block: 10px;
+  outline: none;
+  background-color: var(--color-grey-400);
+  border: 2px solid var(--color-green-300);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing:.4rem;
+  font-family: "Dosis", sans-serif;
+}
 @media only screen and (min-width:1250px) {
   h1,h2,h3,p { text-align: left;}
 
@@ -227,5 +238,9 @@ img {
     border-radius: 50%;
     top: 6px;
     left: -20px;
+  }
+
+  .print {
+    display: block;
   }
 }

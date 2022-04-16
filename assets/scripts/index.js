@@ -1,5 +1,7 @@
-const printButton = document.getElementById("print");
+const printButton = document.querySelectorAll("button");
 
-printButton.addEventListener("click", ()=> {
-    window.print();
-})
+printButton.forEach( button => {
+    button.addEventListener('click', () => {
+        window.print();
+    })
+} )
