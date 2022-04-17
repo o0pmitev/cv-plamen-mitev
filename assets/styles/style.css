@@ -18,16 +18,18 @@ body {
   background-color: var(--color-grey-400);
   color: white;
   font-family: "Montserrat", sans-serif;
-  margin-inline:0;
-  margin-block:0;
-  padding-inline:0;
-  padding-block:0;
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
   line-height: 1.5;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   letter-spacing: 1.2px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Dosis", sans-serif;
 }
 
@@ -35,7 +37,12 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-h1,h2,h3,p { text-align: center;}
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
 
 h2 {
   color: var(--color-green-300);
@@ -82,7 +89,7 @@ nav ul a {
 
 main {
   max-width: 100rem;
-  margin-inline:auto;
+  margin-inline: auto;
   padding-inline: 1rem;
 }
 
@@ -93,10 +100,11 @@ section {
   margin-inline: auto;
 }
 
-dt,dd {
+dt,
+dd {
   display: inline;
-  margin-inline:0;
-  padding-inline:0;
+  margin-inline: 0;
+  padding-inline: 0;
 }
 
 div {
@@ -110,14 +118,14 @@ div dt {
 
 img {
   display: block;
-  margin-inline:auto;
+  margin-inline: auto;
   border-radius: var(--border-radius);
 }
 
 .history {
   font-style: italic;
-  font-size: .8rem;
-  margin-block: .5rem;
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
   font-weight: bold;
 }
 
@@ -151,14 +159,20 @@ img {
   border: 2px solid var(--color-green-300);
   color: white;
   text-transform: uppercase;
-  letter-spacing:.4rem;
+  letter-spacing: 0.4rem;
   font-family: "Dosis", sans-serif;
   cursor: pointer;
 }
-@media only screen and (min-width:1250px) {
-  h1,h2,h3,p { text-align: left;}
+@media only screen and (min-width: 1250px) {
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
 
-  section, img {
+  section,
+  img {
     margin-inline: initial;
   }
 
@@ -210,13 +224,12 @@ img {
   #contact {
     grid-column: 2/3;
     width: 20rem;
-
   }
 
   #work-experience {
-      grid-row: 2/4;
-      grid-column: 3/4;
-  }  
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
 
   #education-history {
     grid-row: 8/9;
@@ -228,11 +241,10 @@ img {
     position: relative;
   }
 
-
   #work-experience ul li::before,
   #education-history ul li::before {
     position: absolute;
-    content: '';
+    content: "";
     height: 10px;
     width: 10px;
     background-color: var(--color-green-300);
@@ -251,21 +263,115 @@ img {
   margin: 0;
 }
 @media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
+  html,
+  body {
+    width: 21cm;
+    height: 29.7cm;
   }
 
+  h2,
+  h3,
+  p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  a {
+    color: black;
+  }
   body {
     background-color: white;
     color: black;
+    font-size: 0.37041666673cm;
   }
 
-  nav {
+  nav,
+  h1,
+  img {
     display: none;
   }
 
+  main {
+    position: relative;
+  }
+
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0.3cm;
+  }
+
+  #personal-profile {
+    position: absolute;
+    top: 1.5cm;
+    left: 0.3cm;
+  }
+
+  #skills {
+    position: absolute;
+    top: 5.5cm;
+    left: 0.3cm;
+  }
+
+  #contact {
+    position: absolute;
+    top: 8cm;
+    left: 0.3cm;
+  }
+
+  #work-experience {
+    position: absolute;
+    top: 0;
+    right: 0.3cm;
+  }
+
+  #education-history {
+    position: absolute;
+    top: 13cm;
+    left: 0.3cm;
+  }
+
   section {
-    break-inside: avoid;
+    width: 48%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #education-history ol {
+    position: relative;
+  }
+
+  .dci {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .career-foundry {
+    position: absolute;
+    top: 8cm;
+    left: 0;
+  }
+
+  #work-experience ol {
+    position: relative;
+  }
+
+  .spark {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .alocai {
+    position: absolute;
+    top: 8cm;
+    right: 0;
+  }
+
+  .altagram {
+    position: absolute;
+    top: 16cm;
+    right: 0;
   }
 }
