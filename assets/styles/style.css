@@ -204,7 +204,7 @@ img {
 
   #personal-profile {
     grid-column: 2/3;
-    width: 20rem;
+    width: 24rem;
     display: flex;
     flex-direction: column;
   }
@@ -215,13 +215,13 @@ img {
 
   #skills {
     grid-column: 2/3;
-    width: 20rem;
+    width: 24rem;
     margin-block-end: 0;
   }
 
   #contact {
     grid-column: 2/3;
-    width: 20rem;
+    width: 24rem;
   }
 
   #work-experience {
