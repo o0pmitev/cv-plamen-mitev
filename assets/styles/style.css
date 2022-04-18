@@ -163,13 +163,11 @@ img {
   font-family: "Dosis", sans-serif;
   cursor: pointer;
 }
+
 @media only screen and (min-width: 1250px) {
-  h1,
-  h2,
-  h3,
-  p {
-    text-align: left;
-  }
+  body {
+    font-size: 18px;
+  };
 
   section,
   img {
@@ -183,7 +181,7 @@ img {
   main {
     display: grid;
     grid-template-columns: 1rem 34rem 1fr 1rem;
-    grid-template-rows: min-content 12rem 29rem 1fr 4rem;
+    grid-template-rows: min-content 12rem 38rem 1fr 4rem;
     gap: 1rem;
   }
 
@@ -262,6 +260,7 @@ img {
   size: A4;
   margin: 0;
 }
+
 @media print {
   html,
   body {
