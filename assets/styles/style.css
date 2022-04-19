@@ -266,6 +266,7 @@ img {
   body {
     width: 21cm;
     height: 29.7cm;
+    overflow: hidden;
   }
 
   h2,
@@ -279,6 +280,7 @@ img {
   a {
     color: black;
   }
+
   body {
     background-color: white;
     color: black;
@@ -333,8 +335,6 @@ img {
 
   section {
     width: 48%;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   #education-history ol {
