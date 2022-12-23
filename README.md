@@ -6,4 +6,4 @@
 - Finished version hosted on [github pages](https://docs.github.com/en/pages) 
   - [Plamen Mitev CV](https://o0pmitev.github.io/cv-plamen-mitev/)
 
-<small>Disclamer: The information in this CV is outdated.For more realisting overview of my skill you can find me on [LinkedIn](https://www.linkedin.com/in/plamen-mitev/)
+<small>_Disclaimer: The information in this CV is outdated. For a more up-to-date overview of my skills and experience you can find me on [LinkedIn](https://www.linkedin.com/in/plamen-mitev/)_</small>
